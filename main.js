@@ -15,7 +15,7 @@ function init(){
     // OSM Basemap
     const openstreetmapStandard = new ol.layer.Tile({
         source: new ol.source.OSM(),
-        visible: false,
+        visible: true,
         title: 'OSMStandard'
     });
 
@@ -26,12 +26,11 @@ function init(){
         source: new ol.source.TileJSON({
         url: `https://api.maptiler.com/maps/basic-v2/tiles.json?key=${key}`,
         tileSize: 512,
-        crossOrigin: 'anonymous',
-        visible: true,
+        crossOrigin: 'anonymous'
+        }),
+		visible: false,
         title: 'mapTiler'
-        })
       });
-
     
 
     // Layer Group
@@ -43,4 +42,27 @@ function init(){
 
     map.addLayer(baseLayerGroup);
 
+	// Layer Switcher
+	const baseLayerElements = document.querySelectorAll('.sidebar > input[type=radio]')
+	for(let baseLayerElement of baseLayerElements){
+		baseLayerElement.addEventListener('change', function(){
+			let baseLayerElementValue = this.value;
+			baseLayerGroup.getLayers().forEach(function(element, index, array){
+				let baseLayerTitle = element.get('title');
+				element.setVisible(baseLayerTitle === baseLayerElementValue);
+		})
+		})
+	}
+	
+	// Vector layers
+	const TestGeoJSON = new ol.layer.VectorImage({
+		source: new ol.source.Vector({
+			url: './data/map.geojson',
+			format: new ol.format.GeoJSON()
+		}),
+		visible: true,
+		title: 'Testgeojson'
+	})
+	map.addLayer(TestGeoJSON);
+	
 }
