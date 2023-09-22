@@ -73,6 +73,6 @@ function init(){
 		visible: true,
 		title: 'CASTestgeojson'
 	})
-	map.addLayer(TestGeoJSON);
+	map.addLayer(casgeoGeoJSON);
 	
 }
