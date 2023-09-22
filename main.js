@@ -55,24 +55,24 @@ function init(){
 	}
 	
 	// Vector layers
-	// const TestGeoJSON = new ol.layer.VectorImage({
-	// 	source: new ol.source.Vector({
-	// 		url: './data/map.geojson',
-	// 		format: new ol.format.GeoJSON()
-	// 	}),
-	// 	visible: true,
-	// 	title: 'Testgeojson'
-	// })
-	//map.addLayer(TestGeoJSON);
-	
-		const casgeoGeoJSON = new ol.layer.VectorImage({
+	const TestGeoJSON = new ol.layer.VectorImage({
 		source: new ol.source.Vector({
-			url: 'https://casgis.azurewebsites.net/geoserver/dtu_base/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu_base%3Allyn_bygning_dtu&maxFeatures=50&outputFormat=application%2Fjson',
+			url: './data/map.geojson',
 			format: new ol.format.GeoJSON()
 		}),
 		visible: true,
-		title: 'CASTestgeojson'
+		title: 'Testgeojson'
 	})
-	map.addLayer(casgeoGeoJSON);
+	map.addLayer(TestGeoJSON);
+	// 
+	// 	const casgeoGeoJSON = new ol.layer.VectorImage({
+	// 	source: new ol.source.Vector({
+	// 		url: 'https://casgis.azurewebsites.net/geoserver/dtu_base/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu_base%3Allyn_bygning_dtu&maxFeatures=50&outputFormat=application%2Fjson',
+	// 		format: new ol.format.GeoJSON()
+	// 	}),
+	// 	visible: true,
+	// 	title: 'CASTestgeojson'
+	// })
+	// map.addLayer(casgeoGeoJSON);
 	
 }
