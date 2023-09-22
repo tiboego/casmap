@@ -63,6 +63,16 @@ function init(){
 		visible: true,
 		title: 'Testgeojson'
 	})
+	//map.addLayer(TestGeoJSON);
+	
+		const casgeoGeoJSON = new ol.layer.VectorImage({
+		source: new ol.source.Vector({
+			url: 'http://gisdata.cas.dtu.dk:8080/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Allyn_parkering_sensade&outputFormat=application/json',
+			format: new ol.format.GeoJSON()
+		}),
+		visible: true,
+		title: 'CASTestgeojson'
+	})
 	map.addLayer(TestGeoJSON);
 	
 }
