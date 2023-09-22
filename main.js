@@ -67,7 +67,7 @@ function init(){
 	
 		const casgeoGeoJSON = new ol.layer.VectorImage({
 		source: new ol.source.Vector({
-			url: 'http://gisdata.cas.dtu.dk:8080/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Allyn_parkering_sensade&outputFormat=application/json',
+			url: 'https://casgis.azurewebsites.net/geoserver/dtu_base/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu_base%3Allyn_bygning_dtu&maxFeatures=50&outputFormat=application%2Fjson',
 			format: new ol.format.GeoJSON()
 		}),
 		visible: true,
