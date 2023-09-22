@@ -55,14 +55,14 @@ function init(){
 	}
 	
 	// Vector layers
-	const TestGeoJSON = new ol.layer.VectorImage({
-		source: new ol.source.Vector({
-			url: './data/map.geojson',
-			format: new ol.format.GeoJSON()
-		}),
-		visible: true,
-		title: 'Testgeojson'
-	})
+	// const TestGeoJSON = new ol.layer.VectorImage({
+	// 	source: new ol.source.Vector({
+	// 		url: './data/map.geojson',
+	// 		format: new ol.format.GeoJSON()
+	// 	}),
+	// 	visible: true,
+	// 	title: 'Testgeojson'
+	// })
 	//map.addLayer(TestGeoJSON);
 	
 		const casgeoGeoJSON = new ol.layer.VectorImage({
