@@ -7,7 +7,20 @@
     <link rel="stylesheet" href="./lib/v6.15.1-dist/ol.css">
 </head>
 <body>
-    <div id='js-map' class='map'></div>
+	<div class="grid-container">
+		<div class="grid-1">
+			<div class="sidebar">
+				<h2>Base Layers</h2>
+				<input type="radio" name='baseLayerRadioButton' value='OSMStandard' checked>OSM Standard<br>
+				<input type="radio" name='baseLayerRadioButton' value='mapTiler'>MapTiler<br>
+			</div>
+		</div>	
+		<div class="grid-2">
+			<div id='js-map' class='map'></div>
+		</div>
+	</div>		
+	
+	<div id='js-map' class='map'></div>
     <script src='./main.js'></script>
     <script src='./lib/v6.15.1-dist/ol.js'></script>
 </body>
