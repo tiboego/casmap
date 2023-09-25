@@ -54,7 +54,7 @@ function init(){
 		})
 	}
 	
-	// Vector layers
+/* 	// Vector layers
 	const fillStyle = new ol.style.Fill({
 		color: [84, 118, 255, 1]
 	})
@@ -85,7 +85,7 @@ function init(){
 			image: circleStyle
 		})
 	})
-	map.addLayer(TestGeoJSON);
+	map.addLayer(TestGeoJSON); */
 
 	// 
 	// 	const casgeoGeoJSON = new ol.layer.VectorImage({
