@@ -59,7 +59,7 @@ function init(){
 		color: [84, 118, 255, 1]
 	})
 
-	const strokeStyle = new = ol.style.Stroke({
+	const strokeStyle = new ol.style.Stroke({
 		color: [46, 45, 45, 1],
 		width: 1.2
 	})
@@ -78,7 +78,7 @@ function init(){
 			format: new ol.format.GeoJSON()
 		}),
 		visible: true,
-		title: 'Testgeojson'
+		title: 'Testgeojson',
 		style: new ol.style.Style({
 			fill: fillStyle,
 			stroke: strokeStyle,
@@ -86,6 +86,7 @@ function init(){
 		})
 	})
 	map.addLayer(TestGeoJSON);
+
 	// 
 	// 	const casgeoGeoJSON = new ol.layer.VectorImage({
 	// 	source: new ol.source.Vector({
