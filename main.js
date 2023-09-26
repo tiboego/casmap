@@ -94,13 +94,8 @@ function init(){
 			format: new ol.format.GeoJSON()
 		}),
 		visible: true,
-		title: 'Testgeojson2',
-		style: new ol.style.Style({
-			fill: fillStyle,
-			stroke: strokeStyle,
-			image: circleStyle
+		title: 'Testgeojson2'
 		})
-	})
 	
 //	map.addLayer(TestGeoJSON);
 
