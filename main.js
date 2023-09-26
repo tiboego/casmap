@@ -85,6 +85,39 @@ function init(){
 			image: circleStyle
 		})
 	})
+
+	// Vector layers 2
+	const fillStyle = new ol.style.Fill({
+		color: [84, 118, 255, 1]
+	})
+
+	const strokeStyle = new ol.style.Stroke({
+		color: [46, 45, 45, 1],
+		width: 1.2
+	})
+
+	const circleStyle = new ol.style.Circle({
+		fill: new ol.style.Fill({
+			color: [245, 100, 5, 1]
+		}),
+		radius: 7,
+		stroke: strokeStyle
+	})
+	
+	const TestGeoJSON2 = new ol.layer.VectorImage({
+		source: new ol.source.Vector({
+			url: './data/map2.geojson',
+			format: new ol.format.GeoJSON()
+		}),
+		visible: true,
+		title: 'Testgeojson2',
+		style: new ol.style.Style({
+			fill: fillStyle,
+			stroke: strokeStyle,
+			image: circleStyle
+		})
+	})
+	
 //	map.addLayer(TestGeoJSON);
 
     // Layer Group
