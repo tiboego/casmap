@@ -75,7 +75,7 @@ function init(){
 	// Vector layers 1	
 	const TestGeoJSON = new ol.layer.VectorImage({
 		source: new ol.source.Vector({
-			url: './data/map.geojson',
+			url: './data/map2.geojson',
 			format: new ol.format.GeoJSON()
 		}),
 		visible: true,
@@ -88,14 +88,14 @@ function init(){
 	})
 
 	// Vector layers 2
-	const TestGeoJSON2 = new ol.layer.VectorImage({
-		source: new ol.source.Vector({
-			url: './data/map2.geojson',
-			format: new ol.format.GeoJSON()
-		}),
-		visible: true,
-		title: 'Testgeojson2'
-		})
+//	const TestGeoJSON2 = new ol.layer.VectorImage({
+//		source: new ol.source.Vector({
+//			url: './data/map2.geojson',
+//			format: new ol.format.GeoJSON()
+//		}),
+//		visible: true,
+//		title: 'Testgeojson2'
+//		})
 	
 //	map.addLayer(TestGeoJSON);
 
