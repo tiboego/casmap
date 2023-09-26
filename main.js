@@ -88,22 +88,22 @@ function init(){
 	map.addLayer(TestGeoJSON);
 
 	// Vector layers 2
-	const fillStyle = new ol.style.Fill({
-		color: [84, 118, 255, 1]
-	})
-
-	const TestGeoJSON2 = new ol.layer.VectorImage({
-		source: new ol.source.Vector({
-			url: './data/bygning_temp.geojson',
-			format: new ol.format.GeoJSON()
-		}),
-		visible: true,
-		title: 'Testgeojson2',
-		style: new ol.style.Style({
-			fill: fillStyle
-		})
-	})
-	map.addLayer(TestGeoJSON2);
+//	const fillStyle = new ol.style.Fill({
+//		color: [84, 118, 255, 1]
+//	})
+//
+//	const TestGeoJSON2 = new ol.layer.VectorImage({
+//		source: new ol.source.Vector({
+//			url: './data/bygning_temp.geojson',
+//			format: new ol.format.GeoJSON()
+//		}),
+//		visible: true,
+//		title: 'Testgeojson2',
+//		style: new ol.style.Style({
+//			fill: fillStyle
+//		})
+//	})
+//	map.addLayer(TestGeoJSON2);
 
 	// 
 	// 	const casgeoGeoJSON = new ol.layer.VectorImage({
