@@ -123,7 +123,7 @@ function init(){
     // Layer Group
     const LayerGroup = new ol.layer.Group({
         layers: [
-            TestGeoJSON
+            TestGeoJSON, TestGeoJSON2
         ]
     });
 
