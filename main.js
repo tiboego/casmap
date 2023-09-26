@@ -4,7 +4,7 @@ function init(){
     const map = new ol.Map({
         view: new ol.View({
             center: [1393877.0335512445, 7515863.043091829],
-            zoom: 16,
+            zoom: 12,
             maxZoom: 22,
             minZoom:  6,
             // rotation: -0.30,
