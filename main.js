@@ -54,7 +54,7 @@ function init(){
 		})
 	}
 	
-	// Vector layers 1
+	// Vector layers styling
 	const fillStyle = new ol.style.Fill({
 		color: [84, 118, 255, 1]
 	})
@@ -71,7 +71,8 @@ function init(){
 		radius: 7,
 		stroke: strokeStyle
 	})
-	
+
+	// Vector layers 1	
 	const TestGeoJSON = new ol.layer.VectorImage({
 		source: new ol.source.Vector({
 			url: './data/map.geojson',
@@ -87,23 +88,6 @@ function init(){
 	})
 
 	// Vector layers 2
-	const fillStyle = new ol.style.Fill({
-		color: [84, 118, 255, 1]
-	})
-
-	const strokeStyle = new ol.style.Stroke({
-		color: [46, 45, 45, 1],
-		width: 1.2
-	})
-
-	const circleStyle = new ol.style.Circle({
-		fill: new ol.style.Fill({
-			color: [245, 100, 5, 1]
-		}),
-		radius: 7,
-		stroke: strokeStyle
-	})
-	
 	const TestGeoJSON2 = new ol.layer.VectorImage({
 		source: new ol.source.Vector({
 			url: './data/map2.geojson',
