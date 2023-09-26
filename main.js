@@ -33,7 +33,7 @@ function init(){
       });
     
 
-    // Layer Group
+    // Baselayer Group
     const baseLayerGroup = new ol.layer.Group({
         layers: [
             openstreetmapStandard, mapTiler
@@ -85,7 +85,16 @@ function init(){
 			image: circleStyle
 		})
 	})
-	map.addLayer(TestGeoJSON);
+//	map.addLayer(TestGeoJSON);
+
+    // Layer Group
+    const LayerGroup = new ol.layer.Group({
+        layers: [
+            TestGeoJSON
+        ]
+    });
+
+    map.addLayer(LayerGroup);
 
 	// Vector layers 2
 //	const fillStyle = new ol.style.Fill({
