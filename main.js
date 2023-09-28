@@ -61,7 +61,7 @@ function init(){
 
 	const strokeStyle = new ol.style.Stroke({
 		color: [161, 161, 161, 1],
-		width: 1.2
+		width: 1.0
 	})
 
 	const circleStyle = new ol.style.Circle({
