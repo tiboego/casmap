@@ -56,11 +56,11 @@ function init(){
 	
 	// Vector layers styling
 	const fillStyle = new ol.style.Fill({
-		color: [84, 118, 255, 1]
+		color: [218, 218, 218, 1]
 	})
 
 	const strokeStyle = new ol.style.Stroke({
-		color: [46, 45, 45, 1],
+		color: [161, 161, 161, 1],
 		width: 1.2
 	})
 
