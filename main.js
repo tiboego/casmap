@@ -12,13 +12,6 @@ function init(){
         target: 'js-map'
     });
 
-    // OSM Basemap
-    const openstreetmapStandard = new ol.layer.Tile({
-        source: new ol.source.OSM(),
-        visible: true,
-        title: 'OSMStandard'
-    });
-
     // Maptiler Basemap    
     const key = 'QYPSkgz7HcsVUEGCFvbN';
 
@@ -28,15 +21,21 @@ function init(){
         tileSize: 512,
         crossOrigin: 'anonymous'
         }),
-		visible: false,
+	visible: true,
         title: 'mapTiler'
       });
-    
+
+// OSM Basemap
+    const openstreetmapStandard = new ol.layer.Tile({
+        source: new ol.source.OSM(),
+        visible: false,
+        title: 'OSMStandard'
+    });
 
     // Baselayer Group
     const baseLayerGroup = new ol.layer.Group({
         layers: [
-            openstreetmapStandard, mapTiler
+            mapTiler, openstreetmapStandard
         ]
     });
 
