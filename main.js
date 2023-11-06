@@ -17,7 +17,7 @@ function init(){
 
     const mapTiler = new ol.layer.Tile({ 
         source: new ol.source.TileJSON({
-        url: https://api.maptiler.com/maps/basic-v2/tiles.json?key=${key},
+        url: 'https://api.maptiler.com/maps/basic-v2/tiles.json?key=${key}',
         tileSize: 512,
         crossOrigin: 'anonymous'
         }),
@@ -74,7 +74,7 @@ function init(){
 	// Vector layers 1	
 	const TestGeoJSON = new ol.layer.VectorImage({
 		source: new ol.source.Vector({
-			url: https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Allyn_bygning_dtu_4326&output=geojson,
+			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Allyn_bygning_dtu_4326&output=geojson',
 			format: new ol.format.GeoJSON()
 		}),
 		visible: true,
