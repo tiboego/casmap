@@ -74,7 +74,7 @@ function init(){
 	// Vector layers 1	
 	const TestGeoJSON = new ol.layer.VectorImage({
 		source: new ol.source.Vector({
-			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Allyn_bygning_dtu_4326&output=geojson',
+			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Allyn_bygning_dtu_4326&outputFormat=application%2Fjson',
 			format: new ol.format.GeoJSON()
 		}),
 		visible: true,
