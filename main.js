@@ -17,7 +17,7 @@ function init(){
 
     const mapTiler = new ol.layer.Tile({ 
         source: new ol.source.TileJSON({
-        url: 'https://api.maptiler.com/maps/basic-v2/tiles.json?key=${key}',
+        url: `https://api.maptiler.com/maps/basic-v2/tiles.json?key=${key}`,
         tileSize: 512,
         crossOrigin: 'anonymous'
         }),
