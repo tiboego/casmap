@@ -54,7 +54,7 @@ function init(){
 	}
 	
 	// Vector layers styling
-	const lineStyle = new ol.style.Fill({
+	const lineStyle = new ol.style.Stroke({
 		color: [150, 150, 150, 1]
 	})
 	const fillStyle = new ol.style.Fill({
