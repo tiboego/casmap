@@ -92,7 +92,7 @@ function init(){
 			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Aldtu_afloebskomponent&outputFormat=application%2Fjson',
 			format: new ol.format.GeoJSON()
 		}),
-		visible: true,
+		visible: false,
 		title: 'Testgeojson2',
 		style: new ol.style.Style({
 			fill: fillStyle,
@@ -107,7 +107,7 @@ function init(){
 			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Aldtu_afloebsledning&outputFormat=application%2Fjson',
 			format: new ol.format.GeoJSON()
 		}),
-		visible: true,
+		visible: false,
 		title: 'Testgeojson3',
 		style: new ol.style.Style({
 			fill: fillStyle,
