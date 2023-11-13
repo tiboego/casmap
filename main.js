@@ -100,10 +100,25 @@ function init(){
 		})
 	})	
 
+		// Vector layer 3	
+	const TestGeoJSON3 = new ol.layer.VectorImage({
+		source: new ol.source.Vector({
+			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Aldtu_afloebsledning&outputFormat=application%2Fjson',
+			format: new ol.format.GeoJSON()
+		}),
+		visible: true,
+		title: 'Testgeojson2',
+		style: new ol.style.Style({
+			fill: fillStyle,
+			stroke: strokeStyle,
+			image: circleStyle
+		})
+	})	
+
     // Layer Group
     const LayerGroup = new ol.layer.Group({
         layers: [
-            TestGeoJSON, TestGeoJSON2
+            TestGeoJSON, TestGeoJSON2, TestGeoJSON3
         ]
     });
 
