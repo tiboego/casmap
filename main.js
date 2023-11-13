@@ -64,7 +64,6 @@ function init(){
 		color: [250, 161, 161, 1],
 		width: 1.0
 	})
-
 	const circleStyle = new ol.style.Circle({
 		fill: new ol.style.Fill({
 			color: [245, 200, 5, 1]
@@ -108,7 +107,7 @@ function init(){
 			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Aldtu_afloebsledning&outputFormat=application%2Fjson',
 			format: new ol.format.GeoJSON()
 		}),
-		visible: true,
+		visible: false,
 		title: 'Testgeojson3',
 		style: new ol.style.Style({
 			fill: fillStyle,
