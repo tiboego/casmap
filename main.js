@@ -102,13 +102,13 @@ function init(){
 		})
 	})	
 
-		// Vector layer 3	
+	// Vector layer 3	
 	const TestGeoJSON3 = new ol.layer.VectorImage({
 		source: new ol.source.Vector({
 			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Aldtu_afloebsledning&outputFormat=application%2Fjson',
 			format: new ol.format.GeoJSON()
 		}),
-		visible: false,
+		visible: true,
 		title: 'Testgeojson3',
 		style: new ol.style.Style({
 			fill: fillStyle,
