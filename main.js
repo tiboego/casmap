@@ -54,10 +54,12 @@ function init(){
 	}
 	
 	// Vector layers styling
+	const lineStyle = new ol.style.Fill({
+		color: [150, 150, 150, 1]
+	})
 	const fillStyle = new ol.style.Fill({
 		color: [218, 218, 218, 1]
 	})
-
 	const strokeStyle = new ol.style.Stroke({
 		color: [250, 161, 161, 1],
 		width: 1.0
@@ -110,7 +112,7 @@ function init(){
 		title: 'Testgeojson3',
 		style: new ol.style.Style({
 			fill: fillStyle,
-			stroke: strokeStyle,
+			stroke: lineStyle,
 			image: circleStyle
 		})
 	})	
