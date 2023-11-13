@@ -69,7 +69,7 @@ function init(){
 			color: [255, 255, 255, 1]
 		}),
 		radius: 4,
-		stroke: strokeStyle
+		stroke: lineStyle
 	})
 
 	// Vector layer 1	
