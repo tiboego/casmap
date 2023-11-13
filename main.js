@@ -55,18 +55,18 @@ function init(){
 	
 	// Vector layers styling
 	const lineStyle = new ol.style.Stroke({
-		color: [150, 150, 150, 1]
+		color: [230, 0, 0, 1]
 	})
 	const fillStyle = new ol.style.Fill({
 		color: [218, 218, 218, 1]
 	})
 	const strokeStyle = new ol.style.Stroke({
-		color: [250, 161, 161, 1],
+		color: [171, 171, 171, 1],
 		width: 1.0
 	})
 	const circleStyle = new ol.style.Circle({
 		fill: new ol.style.Fill({
-			color: [245, 200, 5, 1]
+			color: [255, 255, 255, 1]
 		}),
 		radius: 4,
 		stroke: strokeStyle
@@ -92,7 +92,7 @@ function init(){
 			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Aldtu_afloebskomponent&outputFormat=application%2Fjson',
 			format: new ol.format.GeoJSON()
 		}),
-		visible: false,
+		visible: true,
 		title: 'Testgeojson2',
 		style: new ol.style.Style({
 			fill: fillStyle,
@@ -107,7 +107,7 @@ function init(){
 			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Aldtu_afloebsledning&outputFormat=application%2Fjson',
 			format: new ol.format.GeoJSON()
 		}),
-		visible: false,
+		visible: true,
 		title: 'Testgeojson3',
 		style: new ol.style.Style({
 			fill: fillStyle,
