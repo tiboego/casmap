@@ -71,7 +71,7 @@ function init(){
 		stroke: strokeStyle
 	})
 
-	// Vector layers 1	
+	// Vector layer 1	
 	const TestGeoJSON = new ol.layer.VectorImage({
 		source: new ol.source.Vector({
 			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Allyn_bygning_dtu_4326&outputFormat=application%2Fjson',
@@ -85,11 +85,25 @@ function init(){
 			image: circleStyle
 		})
 	})
+	// Vector layer 2	
+	const TestGeoJSON2 = new ol.layer.VectorImage({
+		source: new ol.source.Vector({
+			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Allyn_bygning_dtu_4326&outputFormat=application%2Fjson',
+			format: new ol.format.GeoJSON()
+		}),
+		visible: true,
+		title: 'Testgeojson2',
+		style: new ol.style.Style({
+			fill: fillStyle,
+			stroke: strokeStyle,
+			image: circleStyle
+		})
+	})	
 
     // Layer Group
     const LayerGroup = new ol.layer.Group({
         layers: [
-            TestGeoJSON
+            TestGeoJSON, TestGeoJSON2
         ]
     });
 
