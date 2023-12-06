@@ -87,13 +87,13 @@ function init(){
 		})
 	})
 	// Vector layer 2	
-	const TestGeoJSON2 = new ol.layer.VectorImage({
+	const LAR = new ol.layer.VectorImage({
 		source: new ol.source.Vector({
-			url: 'https://casgis.azurewebsites.net/geoserver/dtu/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=dtu%3Aldtu_afloebskomponent&outputFormat=application%2Fjson',
+			url: 'https://qgis.cas.dtu.dk/qgisserver/test/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=ler_lar_komponent&output=geojson',
 			format: new ol.format.GeoJSON()
 		}),
-		visible: false,
-		title: 'Testgeojson2',
+		visible: true,
+		title: 'LAR',
 		style: new ol.style.Style({
 			fill: fillStyle,
 			stroke: strokeStyle,
@@ -119,7 +119,7 @@ function init(){
     // Layer Group
     const LayerGroup = new ol.layer.Group({
         layers: [
-            TestGeoJSON, TestGeoJSON2, TestGeoJSON3
+            TestGeoJSON, LAR, TestGeoJSON3
         ]
     });
 
